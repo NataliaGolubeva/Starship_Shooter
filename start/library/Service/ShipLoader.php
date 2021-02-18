@@ -1,0 +1,69 @@
+<?php
+
+
+class ShipLoader
+{
+    private $pdo;
+
+    public function __construct(PDO $pdo){
+        $this->pdo = $pdo;
+    }
+    /**
+     * @return Ship[]
+     */
+    public function getShips()
+    {
+        $ships = array();
+
+        $shipsData = $this->queryForShips();
+        //var_dump($shipsData);die;
+        foreach ($shipsData as $shipData) {
+            $ships[] = $this->createShipFromData($shipData);
+        }
+        return $ships;
+    }
+
+    /**
+     * @param $id
+     * @return Ship|null
+     */
+    public function findOneById($id){
+      $pdo = $this->getPDO();
+        $statement =$pdo->prepare('SELECT * from Ship WHERE id = :id');
+        $statement->execute(array('id' =>$id));
+        $shipArray =$statement->fetch(PDO::FETCH_ASSOC);
+        //var_dump($shipArray); die;
+        if(!$shipArray){
+            return null;
+        }
+        return $this->createShipFromData($shipArray);
+    }
+
+    private function createShipFromData(array $shipData){
+        $ship = new Ship($shipData['name']);
+        $ship->setId($shipData['id']);
+        $ship->setWeaponPower($shipData['weapon_power']);
+        $ship->setJediFactor($shipData['jedi_factor']);
+        $ship->setStrength($shipData['strength']);
+
+        return $ship;
+    }
+
+    private function queryForShips(){
+      $pdo = $this->getPDO();
+        $statement =$pdo->prepare('SELECT * from Ship');
+        $statement->execute();
+        $shipsArray =$statement->fetchAll(PDO::FETCH_ASSOC);
+        //var_dump($shipsArray); die;
+
+        return $shipsArray;
+    }
+
+    /**
+     * @return PDO
+     */
+    private function getPDO(){
+
+        return $this-> pdo;
+    }
+}

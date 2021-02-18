@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef1047c2-8d02-46bf-ac19-dba9ad13e420" name="Default Changelist" comment="" />
+    <list default="true" id="ef1047c2-8d02-46bf-ac19-dba9ad13e420" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/start/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start/init_db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start/library/Model/BattleResult.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start/library/Service/BattleManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start/library/Service/Container.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start/library/Service/ShipLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finish/battle.php" beforeDir="false" afterPath="$PROJECT_DIR$/finish/battle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finish/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/finish/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finish/new_play.php" beforeDir="false" afterPath="$PROJECT_DIR$/finish/new_play.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/battle.php" beforeDir="false" afterPath="$PROJECT_DIR$/start/battle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/start/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/start/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +24,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1oAQN2KwC1pkJxtRa5joBDSnAN5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,12 +38,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/start" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/start/library/Model" />
+      <recent name="$PROJECT_DIR$/start/library/Service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/start" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -35,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612726871884</updated>
-      <workItem from="1612726873015" duration="4542000" />
+      <workItem from="1612726873015" duration="13116000" />
+      <workItem from="1613391672092" duration="21081000" />
     </task>
     <servers />
   </component>
@@ -43,6 +70,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="736" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1613566076054">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="736" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1613566076054" />
+    <state x="658" y="177" key="NewPhpClassDialog" timestamp="1613638427353">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="658" y="177" key="NewPhpClassDialog/0.23.1440.877@0.23.1440.877" timestamp="1613638427353" />
     <state x="779" y="387" key="NewPhpFileDialog" timestamp="1612728562996">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
